@@ -8,7 +8,6 @@ relative_permalinks: true
 title:               React for Designers
 tagline:             For the rest of us
 url:                 http://reactfordesigners.com
-paginate:            1
 baseurl:             ""
 markdown:            redcarpet
 highlighter:         pygments
