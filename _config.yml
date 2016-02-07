@@ -8,8 +8,6 @@ title:               React for Designers
 tagline:             For the rest of us
 url:                 http://reactfordesigners.com
 baseurl:             ""
-markdown:            redcarpet
-highlighter:         pygments
 
 # Assets
 #
