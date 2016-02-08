@@ -125,4 +125,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (~> 38)
+  github-pages
