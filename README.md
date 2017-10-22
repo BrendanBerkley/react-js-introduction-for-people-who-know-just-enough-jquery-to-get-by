@@ -1,3 +1,5 @@
+## Under Construction as of Oct 22, 2017
+
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Updated my site to use https and <a href="https://twitter.com/js_bin?ref_src=twsrc%5Etfw">@js_bin</a> on my React tutorial (408k views so far) is down. <a href="https://t.co/DsDWyj8ikY">https://t.co/DsDWyj8ikY</a> Contacting support. Sorry <a href="https://t.co/H0GYlLPyjM">pic.twitter.com/H0GYlLPyjM</a></p>&mdash; Shu Uesugi (@chibicode) <a href="https://twitter.com/chibicode/status/922129510731886592?ref_src=twsrc%5Etfw">October 22, 2017</a></blockquote>
 
 ---
