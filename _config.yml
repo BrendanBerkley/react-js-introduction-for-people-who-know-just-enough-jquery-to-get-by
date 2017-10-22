@@ -1,28 +1,46 @@
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-
-# Setup
-title:               React for Designers
-tagline:             For the rest of us
-url:                 http://reactfordesigners.com
-baseurl:             ""
-
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _sass
-  style:            :compressed
-
-# About/contact
+# ----------------------------------------------------------------------------
+# Customize Options:
+title: React.js Introduction For People Who Know Just Enough jQuery To Get By
+permalink: posts/:title/
+# If you're not deploying to a subdirectory, set baseurl to nil
+lang: "en"
+baseurl: "/react-js-introduction-for-people-who-know-just-enough-jquery-to-get-by/"
+num_posts_visible_initially: 10
+date_format: "%b %-d, %Y"
+url: "https://chibicode.com"
+# Twitter IDs
+twitter:
+  username: "chibicode"
 author:
-  name:              Shu Uesugi
-  url:               https://twitter.com/chibicode
-  email:             shu@chibicode.com
+  twitter: "chibicode"
+# See: https://material.io/guidelines/style/color.html
+# Use color-name-value, like pink-200 or deep-purple-100
+brand_color: "deep-purple-100"
+# "UA-NNNNNNNN-N"
+google_analytics: "UA-32987822-1"
+# Set default og:image
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "/static/images/react-for-designers/jquery-style-vs-react-style.png"
+# ----------------------------------------------------------------------------
 
-# Custom vars
-version:             2.0.0
-github:
-  repo:              https://github.com/reactfordesigners/reactfordesigners.github.io
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - mix-manifest.json
+  - webpack.mix.js
+  - yarn.lock
+  - package.json
+  - hot
+  - LICENSE.txt
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
+  - jekyll-readme-index
