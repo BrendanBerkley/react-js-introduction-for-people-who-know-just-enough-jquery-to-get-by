@@ -48,28 +48,28 @@ The UI we'll build will resemble the Tweet box that you find on [Twitter](http:/
 
 ## Step 1: Introduction to JSBin (5 - 10 minutes)
 
-We'll be using [JSBin](http://jsbin.com/), an online HTML/CSS/JS editor which supports both jQuery and React.js code. You might be familiar with similar services like [CodePen](http://codepen.io/) or [JSFiddle](https://jsfiddle.net/) - they're all pretty similar, so I just decided to go with JSBin.
+We'll be using [JSBin](https://jsbin.com/), an online HTML/CSS/JS editor which supports both jQuery and React.js code. You might be familiar with similar services like [CodePen](http://codepen.io/) or [JSFiddle](https://jsfiddle.net/) - they're all pretty similar, so I just decided to go with JSBin.
 
 Here's an example JSBin:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/temaduv/1/embed?html,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/temaduv/1/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/temaduv/1/embed?html,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/temaduv/1/edit">Click here</a>.</span>
 </p>
 
 **Try modifying the HTML on the left** - i.e. change the button's text. You'll see the change on the right. That's how JSBin works.
 
 ### Create a JSBin Account
 
-Unless you already have a JSBin account, <strong>head to <a href="http://jsbin.com/">jsbin.com</a> to create an account.</strong> Click **Login or Register** on the menu to create an account.
+Unless you already have a JSBin account, <strong>head to <a href="https://jsbin.com/">jsbin.com</a> to create an account.</strong> Click **Login or Register** on the menu to create an account.
 
 After creating an account, you can **clone** public JSBins to your account, just like you clone public GitHub repositories.
 
 Let's try it. **Click "Save" on the menu on the JSBin below**.
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/temaduv/1/embed?html,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/temaduv/1/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/temaduv/1/embed?html,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/temaduv/1/edit">Click here</a>.</span>
 </p>
 
 Once you're on the JSBin site, you can select "Add Library" from the menu to import popular CSS/JS libraries.
@@ -84,8 +84,8 @@ Once you're on the JSBin site, you can select "Add Library" from the menu to imp
 And the output becomes a little prettier:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/cocica/1/embed?html,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/cocica/1/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/cocica/1/embed?html,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/cocica/1/edit">Click here</a>.</span>
 </p>
 
 ### Create a Tweet Box
@@ -102,8 +102,8 @@ You seem to be pretty comfortable with JSBin now. Alright, let's build out a Twe
 We're using Bootstrap classes like `form-control`, `well`, `clearfix`, etc., but those are just for the looks and irrelevant for the tutorial. Here's the result:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/jofivi/1/embed?html,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/jofivi/1/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/jofivi/1/embed?html,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/jofivi/1/edit">Click here</a>.</span>
 </p>
 
 That's it for this step! Not too bad, eh?
@@ -116,7 +116,7 @@ Now, time for some JS. We'll first implement the following feature:
 
 Here's the demo. As you can see, the button is initially disabled. If you type something into the text box, the button becomes enabled.
 
-<a class="jsbin-embed" href="http://jsbin.com/wewimu/2/embed?output">JS Bin on jsbin.com</a> <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/wewimu/2/edit">Click here</a>.</span>
+<a class="jsbin-embed" href="https://jsbin.com/wewimu/2/embed?output">JS Bin on jsbin.com</a> <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/wewimu/2/edit">Click here</a>.</span>
 
 
 To get this to work, **continue from the previous JSBin, open the JavaScript tab, and add the following jQuery code**. You don't need to add jQuery because Bootstrap, which we added on the previous step, includes jQuery.
@@ -159,8 +159,8 @@ Let me show you what I mean. Here's the React.js code which displays the same Tw
 ### WARNING! You don't need to follow along yet - just read the code.
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/wewimu/13/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/wewimu/13/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/wewimu/13/embed?js,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/wewimu/13/edit">Click here</a>.</span>
 </p>
 
 Some observations:
@@ -190,7 +190,7 @@ I created a starter HTML file for you. Using "Add library," I've imported Bootst
 
  **Please try to follow along. To begin, click "Save" to copy this to your JSBin.**
 
-<a class="jsbin-embed" href="http://jsbin.com/notawe/11/embed?html">JS Bin on jsbin.com</a> <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/notawe/11/edit">Clnotaick here</a>.</span>
+<a class="jsbin-embed" href="https://jsbin.com/notawe/11/embed?html">JS Bin on jsbin.com</a> <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/notawe/11/edit">Clnotaick here</a>.</span>
 
 
 After saving to your JSBin, **open the JavaScript tab and select "JSX (React)"**:
@@ -311,8 +311,8 @@ If you typed this correctly, then you should see the Tweet box on your JSBin. **
 That's it for this step! Here's the JSBin up to this part:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/vajica/10/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/vajica/10/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/vajica/10/embed?js,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/vajica/10/edit">Click here</a>.</span>
 </p>
 
 ## Step 5: Re-implement the First Feature - Tweet Button Should Initially Be Disabled - in React (5 - 10 minutes)
@@ -324,8 +324,8 @@ We're going to re-implement in React the first feature we implemented using jQue
 Here's the jQuery code we wrote:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/wewimu/3/edit?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/wewimu/3/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/wewimu/3/edit?js,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/wewimu/3/edit">Click here</a>.</span>
 </p>
 
 Let's see how we can do this in React.
@@ -405,8 +405,8 @@ The `event` object contains `target`, which is the `textarea`. We use `.value` o
 You can try it out here:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/kohudu/8/embed?javascript,console,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/kohudu/8/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/kohudu/8/embed?javascript,console,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/kohudu/8/edit">Click here</a>.</span>
 </p>
 
 That's it for this step! We'll finish this feature on the next step.
@@ -482,8 +482,8 @@ render: function() {
 You can try it out on the JSBin below as well:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/yabiqo/10/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/yabiqo/10/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/yabiqo/10/embed?js,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/yabiqo/10/edit">Click here</a>.</span>
 </p>
 
 Now the previous diagram might make more sense to you.
@@ -523,8 +523,8 @@ This works with other boolean attributes like `checked`. This is not officially 
 The resulting JSBin is here:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/lutefu/11/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/lutefu/11/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/lutefu/11/embed?js,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/lutefu/11/edit">Click here</a>.</span>
 </p>
 
 ### Reflections
@@ -551,8 +551,8 @@ We'll start with our previous jQuery implementation. We'll put our React.js code
 <div class="message"><strong>✔ Click "Save" below</strong> to copy the code to your JSBin and get started.</div>
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/wewimu/3/edit?html,js">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/wewimu/3/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/wewimu/3/edit?html,js">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/wewimu/3/edit">Click here</a>.</span>
 </p>
 
 First, **add character count in HTML using `span`**. Let's set it as `span`:
@@ -575,8 +575,8 @@ $("textarea").on("input", function() {
 That's it! **Try typing in the Tweet box** and you'll see the character count update. Here's the JSBin:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/durima/2/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/durima/2/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/durima/2/embed?js,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/durima/2/edit">Click here</a>.</span>
 </p>
 
 ## Step 8: Remaining Character Count in React.js (5 minutes)
@@ -586,8 +586,8 @@ How about in React? You should try doing this on your own. Start with our previo
 <div class="message"><strong>✔ Click "Save" below</strong> to copy the code to your JSBin and get started.</div>
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/lutefu/11/embed?html,js">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/lutefu/11/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/lutefu/11/embed?html,js">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/lutefu/11/edit">Click here</a>.</span>
 </p>
 
 (**Tip**: Since you won't be touching HTML in React, **you can close the HTML tab on JSBin** so you can get more screen space).
@@ -608,8 +608,8 @@ How about in React? You should try doing this on your own. Start with our previo
 Here's the JSBin:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/lizoco/9/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/lizoco/9/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/lizoco/9/embed?js,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/lizoco/9/edit">Click here</a>.</span>
 </p>
 
 Too easy? Not sure why React.js is so much better than jQuery? Well, the next step has more complexity, and this is when React.js really shines.
@@ -635,7 +635,7 @@ So that's what we're going to do. Here's the spec:
 
 Here's the demo JSBin. **Try clicking the "Add Photo" button** and see what happens to the character count and the Tweet button.
 
-<a class="jsbin-embed" href="http://jsbin.com/sanuqi/6/embed?output">JS Bin on jsbin.com</a> <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/sanuqi/6/edit">Click here</a>.</span>
+<a class="jsbin-embed" href="https://jsbin.com/sanuqi/6/embed?output">JS Bin on jsbin.com</a> <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/sanuqi/6/edit">Click here</a>.</span>
 
 Let's implement this. We'll first try with jQuery.
 
@@ -646,8 +646,8 @@ Start with our previous jQuery implementation.
  <div class="message"><strong>✔ Click "Save" below</strong> to copy the code to your JSBin and get started.</div>
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/durima/2/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/durima/2/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/durima/2/embed?js,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/durima/2/edit">Click here</a>.</span>
 </p>
 
 We'll modify both the HTML and JS. Before, we were attaching a handler to `$("button")`, but this won't work if there are two buttons. **So let's modify the HTML like this**:
@@ -823,8 +823,8 @@ We add the following check to whether or not the button should be disabled:
 Here's the final HTML and JS code from the previous step:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/xupice/2/embed?html,js">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/xupice/2/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/xupice/2/embed?html,js">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/xupice/2/edit">Click here</a>.</span>
 </p>
 
 **Take a look at the jQuery code once again**. It's very confusing. If you're keeping the code as-is, you'll probably need some comments so you remember what you did. There are clear signs of duplication, but you have to think a bit on how to refactor.
@@ -852,8 +852,8 @@ Start with our previous React implementation.
  <div class="message"><strong>✔ Click "Save" below</strong> to copy the code to your JSBin and get started.</div>
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/lizoco/9/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/lizoco/9/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/lizoco/9/embed?js,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/lizoco/9/edit">Click here</a>.</span>
 </p>
 
 (**Tip**: Since you won't be touching HTML in React, **you can close the HTML tab on JSBin** so you can get more screen space).
@@ -1015,8 +1015,8 @@ That's it! Try toggling the "Add Photo" button and check that the "Tweet Button"
 That was easy. Here's the resulting JSBin:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/fitiha/10/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/fitiha/10/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/fitiha/10/embed?js,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/fitiha/10/edit">Click here</a>.</span>
 </p>
 
 ## Step 13: Reflection on the React Code - Why So Simple? (5 minutes)
@@ -1062,7 +1062,7 @@ Instead, **we'll be displaying an alert box** on top and indicate which characte
 
 **And paste it into the Tweet box below:**
 
-<a class="jsbin-embed" href="http://jsbin.com/kuveba/9/embed?output">JS Bin on jsbin.com</a> <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/kuveba/9/edit">Click here</a>.</span>
+<a class="jsbin-embed" href="https://jsbin.com/kuveba/9/embed?output">JS Bin on jsbin.com</a> <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/kuveba/9/edit">Click here</a>.</span>
 
 
 - It should show an alert box with the overflown characters highlighted in red
@@ -1083,8 +1083,8 @@ Start with our previous React implementation.
 <div class="message"><strong>✔ Click "Save" below</strong> to copy the code to your JSBin and get started.</div>
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/fitiha/10/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/fitiha/10/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/fitiha/10/embed?js,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/fitiha/10/edit">Click here</a>.</span>
 </p>
 
 We'll do this step by step. First, **we'll display a simple alert when you write past the limit.** The alert will have some static text.
@@ -1193,8 +1193,8 @@ if (this.state.photoAdded) {
 Now, try toggling the "Add Photo" button while entering any text that's longer than the limit. It should work correctly. Here's the JSBin:
 
 <p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="http://jsbin.com/kuveba/9/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="http://jsbin.com/kuveba/9/edit">Click here</a>.</span>
+  <a class="jsbin-embed" href="https://jsbin.com/kuveba/9/embed?js,output">JS Bin on jsbin.com</a>
+  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/kuveba/9/edit">Click here</a>.</span>
 </p>
 
 That's it! Again, you can see that the code changes were simple:
