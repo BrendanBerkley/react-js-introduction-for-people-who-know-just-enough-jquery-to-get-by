@@ -1,3 +1,7 @@
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Updated my site to use https and <a href="https://twitter.com/js_bin?ref_src=twsrc%5Etfw">@js_bin</a> on my React tutorial (84k+ views so far) is down. <a href="https://t.co/DsDWyj8ikY">https://t.co/DsDWyj8ikY</a> Contacting support. Sorry <a href="https://t.co/XfPnEyF6OP">pic.twitter.com/XfPnEyF6OP</a></p>&mdash; Shu Uesugi (@chibicode) <a href="https://twitter.com/chibicode/status/922128068935761920?ref_src=twsrc%5Etfw">October 22, 2017</a></blockquote>
+
+---
+
 Written in July 2015 by <a href='https://chibicode.com/'>Shu Uesugi</a>.
 
 (**Updated Jul 15, 2016**): Updated for React 15. This page is no longer being updated as I don't have time :( Also Twitter changed the logic so photos no longer count towards character count.
