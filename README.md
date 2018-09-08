@@ -1,12 +1,8 @@
-## Under Construction as of Oct 22, 2017
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Updated my site to use https and <a href="https://twitter.com/js_bin?ref_src=twsrc%5Etfw">@js_bin</a> on my React tutorial (408k views so far) is down. <a href="https://t.co/DsDWyj8ikY">https://t.co/DsDWyj8ikY</a> Contacting support. Sorry <a href="https://t.co/H0GYlLPyjM">pic.twitter.com/H0GYlLPyjM</a></p>&mdash; Shu Uesugi (@chibicode) <a href="https://twitter.com/chibicode/status/922129510731886592?ref_src=twsrc%5Etfw">October 22, 2017</a></blockquote>
-
----
-
 Written in July 2015 by <a href='https://chibicode.com/'>Shu Uesugi</a>.
 
-(**Updated Jul 15, 2016**): Updated for React 15. This page is no longer being updated as I don't have time :( Also Twitter changed the logic so photos no longer count towards character count.
+(**Updated July 15, 2016**): Updated for React 15. This page is no longer being updated as I don't have time :( Also Twitter changed the logic so photos no longer count towards character count.
+
+(**Updated September 2018**): <a href='https://twitter.com/TallBlondeGuy'>Brendan Berkley</a> forked the repo and swapped out JSBin for CodePen.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/wesbos/status/598144948559605760"></a></p></blockquote>
 
@@ -52,35 +48,30 @@ The UI we'll build will resemble the Tweet box that you find on [Twitter](http:/
 
 ![](/static/images/react-for-designers/tweet-box.png)
 
-## Step 1: Introduction to JSBin (5 - 10 minutes)
+## Step 1: Introduction to CodePen (5 - 10 minutes)
 
-We'll be using [JSBin](https://jsbin.com/), an online HTML/CSS/JS editor which supports both jQuery and React.js code. You might be familiar with similar services like [CodePen](http://codepen.io/) or [JSFiddle](https://jsfiddle.net/) - they're all pretty similar, so I just decided to go with JSBin.
+We'll be using [CodePen](https://codepen.io), an online HTML/CSS/JS editor which supports both jQuery and React.js code. You might be familiar with similar services like [JSFiddle](https://jsfiddle.net/) or [JSBin](https://jsbin.com/) - they're all pretty similar. JSBin was used for the original version of this tutorial, but there were [problems with embedding things in this page](https://twitter.com/chibicode/status/922129510731886592).
 
-Here's an example JSBin:
+Here's an example "Pen" (as CodePen calls them):
 
-<p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="https://jsbin.com/temaduv/1/embed?html,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/temaduv/1/edit">Click here</a>.</span>
-</p>
+<p data-height="265" data-theme-id="dark" data-slug-hash="YOEOOK" data-default-tab="html,result" data-user="BrendanBerkley" data-pen-title="This is Codepen" class="codepen">See the Pen <a href="https://codepen.io/BrendanBerkley/pen/YOEOOK/">This is Codepen</a> by Brendan Berkley (<a href="https://codepen.io/BrendanBerkley">@BrendanBerkley</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-**Try modifying the HTML on the left** - i.e. change the button's text. You'll see the change on the right. That's how JSBin works.
+**Click "Edit on CodePen", and then try modifying the HTML** - i.e. change the button's text. The page will refresh so you see the change. That's how CodePen works.
 
-### Create a JSBin Account
+You'll notice that the HTML section doesn't have some tags you might expect - `<html>`, `<head>`, `<body>`. Most of the time that's fine; CodePen will add those in.
 
-Unless you already have a JSBin account, <strong>head to <a href="https://jsbin.com/">jsbin.com</a> to create an account.</strong> Click **Login or Register** on the menu to create an account.
+### Create a CodePen Account (or Don't!)
 
-After creating an account, you can **clone** public JSBins to your account, just like you clone public GitHub repositories.
+You can **fork** public Pens to your account, just like you fork public GitHub repositories.
 
-Let's try it. **Click "Save" on the menu on the JSBin below**.
+You can do this anonymously, but it's more convenient to create an account if you want to find your work later. CodePen will prompt you to create an account when you fork code.
 
-<p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="https://jsbin.com/temaduv/1/embed?html,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/temaduv/1/edit">Click here</a>.</span>
-</p>
+Once you're on the CodePen site, you can select "Settings" from the menu to import popular CSS/JS libraries.
 
-Once you're on the JSBin site, you can select "Add Library" from the menu to import popular CSS/JS libraries.
+![](static/images/react-for-designers/add-library-1.png)
 
-![](/static/images/react-for-designers/add-library.png)
+![](static/images/react-for-designers/add-library-2.png)
 
 **Try doing the following**:
 
@@ -89,28 +80,26 @@ Once you're on the JSBin site, you can select "Add Library" from the menu to imp
 
 And the output becomes a little prettier:
 
-<p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="https://jsbin.com/cocica/1/embed?html,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/cocica/1/edit">Click here</a>.</span>
-</p>
+<p data-height="265" data-theme-id="dark" data-slug-hash="vzWVBL" data-default-tab="html,result" data-user="BrendanBerkley" data-pen-title="Basic CodePen with external libraries added" class="codepen">See the Pen <a href="https://codepen.io/BrendanBerkley/pen/vzWVBL/">Basic CodePen with external libraries added</a> by Brendan Berkley (<a href="https://codepen.io/BrendanBerkley">@BrendanBerkley</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ### Create a Tweet Box
 
-You seem to be pretty comfortable with JSBin now. Alright, let's build out a Tweet box. Still on the same JSBin as before, **change the HTML inside `<body>` like this:**
+You seem to be pretty comfortable with CodePen now. Alright, let's build out a Tweet box. Still on the same CodePen as before, **change the HTML to look like this:**
 
 ```
-<div class="well clearfix">
-  <textarea class="form-control"></textarea><br/>
-  <button class="btn btn-primary pull-right">Tweet</button>
+<div class="card card-body bg-light m-3">
+  <div class="form-group">
+    <textarea class="form-control mb-3"></textarea>
+    <button class="btn btn-primary float-right">Tweet</button>
+  </div>
 </div>
 ```
 
-We're using Bootstrap classes like `form-control`, `well`, `clearfix`, etc., but those are just for the looks and irrelevant for the tutorial. Here's the result:
+We're using Bootstrap classes like `form-control`, `card`, `m-3`, etc., but those are just for the looks and irrelevant for the tutorial. Here's the result:
 
-<p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="https://jsbin.com/jofivi/1/embed?html,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/jofivi/1/edit">Click here</a>.</span>
-</p>
+<p data-height="265" data-theme-id="dark" data-slug-hash="VGrEev" data-default-tab="html,result" data-user="BrendanBerkley" data-pen-title="Basic Tweet Box" class="codepen">See the Pen <a href="https://codepen.io/BrendanBerkley/pen/VGrEev/">Basic Tweet Box</a> by Brendan Berkley (<a href="https://codepen.io/BrendanBerkley">@BrendanBerkley</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 That's it for this step! Not too bad, eh?
 
