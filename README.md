@@ -114,10 +114,10 @@ Now, time for some JS. We'll first implement the following feature:
 
 Here's the demo. As you can see, the button is initially disabled. If you type something into the text box, the button becomes enabled.
 
-<a class="jsbin-embed" href="https://jsbin.com/wewimu/2/embed?output">JS Bin on jsbin.com</a> <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/wewimu/2/edit">Click here</a>.</span>
+<p data-height="265" data-theme-id="dark" data-slug-hash="aaEoNr" data-default-tab="js,result" data-user="BrendanBerkley" data-pen-title="Tweet Box - jQuery enable/disable button" class="codepen">See the Pen <a href="https://codepen.io/BrendanBerkley/pen/aaEoNr/">Tweet Box - jQuery enable/disable button</a> by Brendan Berkley (<a href="https://codepen.io/BrendanBerkley">@BrendanBerkley</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-
-To get this to work, **continue from the previous JSBin, open the JavaScript tab, and add the following jQuery code**. You don't need to add jQuery because Bootstrap, which we added on the previous step, includes jQuery.
+To get this to work, **fork the previous Pen, add the jQuery library, and then add the following jQuery code into the "JS" section**.
 
 ```
 // Initially disable the button
