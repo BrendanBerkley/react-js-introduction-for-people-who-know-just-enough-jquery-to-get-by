@@ -75,7 +75,10 @@ Once you're on the CodePen site, you can select "Settings" from the menu to impo
 
 **Try doing the following**:
 
-- **Click "Add Library" and add the latest Bootstrap**
+- **Click "JavaScript" and look for "Add External Scripts/Pens"
+- **Add the latest Bootstrap (twitter-bootstrap)**
+- **Click "CSS" and look for "Add External Stylesheets/Pens"
+- **Add the latest Bootstrap here as well**
 - **Add `btn btn-primary` classes on `<button>`**
 
 And the output becomes a little prettier:
