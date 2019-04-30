@@ -46,7 +46,7 @@ Instead, we'll get right to building a simple UI, alternating between jQuery imp
 
 The UI we'll build will resemble the Tweet box that you find on [Twitter](http://twitter.com). It won't be exactly like the real Tweet box, but it'll be pretty similar. Hopefully you'll find this example to be practical.
 
-![](/static/images/react-for-designers/tweet-box.png)
+![](static/images/react-for-designers/tweet-box.png)
 
 ## Step 1: Introduction to CodePen (5 - 10 minutes)
 
@@ -156,29 +156,31 @@ Let me show you what I mean. Here's the React.js code which displays the same Tw
 
 ### WARNING! You don't need to follow along yet - just read the code.
 
-<p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="https://jsbin.com/wewimu/13/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/wewimu/13/edit">Click here</a>.</span>
+<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="js,result" data-user="BrendanBerkley" data-slug-hash="yrrRGq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Tweet Box - React JSX rendering of HTML">
+  <span>See the Pen <a href="https://codepen.io/BrendanBerkley/pen/yrrRGq/">
+  Tweet Box - React JSX rendering of HTML</a> by Brendan Berkley (<a href="https://codepen.io/BrendanBerkley">@BrendanBerkley</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 Some observations:
 
 - Inside `return (...)` is HTML code, not JavaScript. In React, you'll write in a special syntax called JSX, which lets you put HTML-like code inside JavaScript.
 - I say HTML-"like" because it's not identical to HTML. Notice that it uses `className` instead of `class` - but they're pretty similar, so you'll learn them quickly.
-- Your browser does not understand JSX, so when React processes your JSX code, it automatically converts the HTML part inside JSX into valid JavaScript code so that the browser can understand it.
+- Your browser does not understand JSX, so CodePen is running a preprocessor called [Babel](https://babeljs.io/) to turn JSX into JavaScript code that the browser can use.
 - The HTML code inside `return (...)` is pretty much identical to the HTML code from step 1.
-- Try clicking on "HTML" on the above JSBin, and you'll see that there's no markup in HTML besides `<body><div id="container"></div></body>`. This is what I mean when I said **in React, you'll be writing markup in JavaScript (JSX), not in HTML**.
+- Try clicking on "HTML" on the above CodePen, and you'll see that there's no markup in HTML besides `<div id="container"></div>`. This is what I mean when I said **in React, you'll be writing markup in JavaScript (JSX), not in HTML**.
 
 ### Frequently Asked Questions & Answers
 
-**Question**: What do `React.createClass` and `ReactDOM.render` do? Do I need to understand them now? <br>
-**Answer**: Don't worry about it for now. Basically, `React.createClass` creates a piece of UI with a name (in this case, `TweetBox`). This then gets attached to the DOM through `ReactDOM.render(<TweetBox />, document.getElementById("container"))` - meaning this UI is added inside the `<div id="container">` tag. That's all you need to know for now.
+**Question**: What do `class TweetBox extends React.Component` and `ReactDOM.render` do? Do I need to understand them now? <br>
+**Answer**: Don't worry about it for now. Basically, `class TweetBox extends React.Component` creates a piece of UI with a name (in this case, `TweetBox`). This then gets attached to the DOM through `ReactDOM.render(<TweetBox />, document.getElementById("container"))` - meaning this UI is added inside the `<div id="container">` tag. That's all you need to know for now.
 
 **Question**: Do I need to do anything special to write JSX on my local machine?<br>
-**Answer**: Yes, but that's outside the scope of this tutorial - in short, you need to import something called JSX transformer (<a href="http://facebook.github.io/react/downloads.html">here's how</a>). This step is not necessary on JSBin though. All you need to do to write JSX on JSBin is to (1) add a React library (the one without addons) from the dropdown and (2) select "JSX (React)" from the dropdown menu on the JS view.
+**Answer**: Yes, but that's outside the scope of this tutorial - in short, you need to import something called a JSX transformer. This step is not necessary on CodePen though. To write JSX in CodePen, go to the Pen's settings and click the JavaScript tab. Click the dropdown under "JavaScript preprocessor" and click "Babel". Then, in the "Add External Scripts/Pens" section, search for "react" and "react-dom" and add those to your Pen.
 
-**Question**: Isn't it a bad style to write markup (HTML) and behaviors (JS) in the same place?<br>
-**Answer**: It might be a bad style for simple web pages, but not necessarily so for large web applications. In large web applications, there will be hundreds of pieces of UI, each containing its own markup and behaviors. The code will be more manageable if those markup and behaviors are kept together for each piece of UI, as opposed to keeping "all markup" together and "all behaviors" together. And React is designed for developing large web applications. In fact, React was actually created and used by Facebook, one of the largest web applications ever.
+**Question**: Isn't it bad to write markup (HTML) and behaviors (JS) in the same place?<br>
+**Answer**: It might be a bad style for simple web pages, but not necessarily so for large web applications. For these, there will be hundreds of pieces of UI, each containing its own markup and behaviors. The code will be more manageable if those markup and behaviors are kept together for each piece of UI, as opposed to keeping "all markup" together and "all behaviors" together. And React is designed for developing large web applications. In fact, it was created for and used by Facebook, a very large set of web applications.
 
 Next, I'll show you how to write the above React code step-by-step.
 
