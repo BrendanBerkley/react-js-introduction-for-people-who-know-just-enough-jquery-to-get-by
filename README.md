@@ -161,7 +161,6 @@ Let me show you what I mean. Here's the React.js code which displays the same Tw
   Tweet Box - React JSX rendering of HTML</a> by Brendan Berkley (<a href="https://codepen.io/BrendanBerkley">@BrendanBerkley</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 Some observations:
 
@@ -186,24 +185,22 @@ Next, I'll show you how to write the above React code step-by-step.
 
 ## Step 4: Writing Your First React.js Code (5 - 10 minutes)
 
-I created a starter HTML file for you. Using "Add library," I've imported Bootstrap (removed bootstrap.js and jquery) and React (without addons).
+I created a starter Pen for you. I imported Bootstrap into the CSS settings and react/react-dom into the JavaScript settings, and set the preprocessor to Babel so you can write JSX code.
 
- **Please try to follow along. To begin, click "Save" to copy this to your JSBin.**
+**Try to follow along. To begin, click "Edit on CodePen", then "Fork" to create a new copy. You can save this copy to your account if you wish, or you can work anonymously.**
 
-<a class="jsbin-embed" href="https://jsbin.com/notawe/11/embed?html">JS Bin on jsbin.com</a> <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/notawe/11/edit">Clnotaick here</a>.</span>
-
-
-After saving to your JSBin, **open the JavaScript tab and select "JSX (React)"**:
-
-![](/static/images/react-for-designers/select-jsx.png)
+<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="BrendanBerkley" data-slug-hash="VNONwz" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Tweet Box - Basic React setup">
+  <span>See the Pen <a href="https://codepen.io/BrendanBerkley/pen/VNONwz/">
+  Tweet Box - Basic React setup</a> by Brendan Berkley (<a href="https://codepen.io/BrendanBerkley">@BrendanBerkley</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
 
 Now you're ready to write some React. **Try to follow along and type the following JS code snippets** on your JSBin.
 
 ```
-var TweetBox = React.createClass({
-  render: function() {
-  }
-});
+class TweetBox extends React.Component {
+  render() {}
+}
 ```
 
 This is the template for creating a piece of UI using React (in this case, a Tweet box). It's just as essential as `$(function() { ... })` on jQuery.
@@ -211,15 +208,15 @@ This is the template for creating a piece of UI using React (in this case, a Twe
 To actually construct the UI, we must fill in the `render()` method. For now, let's keep it simple with just a single `div` tag.
 
 ```
-var TweetBox = React.createClass({
-  render: function() {
+class TweetBox extends React.Component {
+  render() {
     return (
       <div>
         Hello World!
       </div>
     );
   }
-});
+}
 ```
 
 Like the above example, **put a pair of parenthesis `(...)` after `return`, and write the markup inside.**
@@ -249,7 +246,7 @@ return (
 );
 ```
 
-For the above example, the workaround is to create an extra tag which wraps the two `span` tags. I just used `div` here. This is a necessary evil when using React.
+For the above example, the workaround is to create an extra tag which wraps the two `span` tags. I'm using `div` here for simplicity, but if you are feeling a bit more advanced you can try a [React Fragment](https://reactjs.org/docs/fragments.html) instead. This is a necessary evil when using React.
 
 ```
 return (
@@ -269,9 +266,9 @@ return (
 Now we need to "attach" this UI to the DOM in order to see `Hello World`. To do this, **add `ReactDOM.render()` below the code we just wrote**:
 
 ```
-var TweetBox = React.createClass({
+class TweetBox extends React.Component {
   ...
-});
+}
 
 ReactDOM.render(
   <TweetBox />,
@@ -283,7 +280,7 @@ ReactDOM.render(
 
 `ReactDOM.render` takes two arguments. The first argument is the UI object, which is `<VariableName />`. The second argument is the DOM object (in this case, `document.getElementById("container")`). Put together, the above code renders the `TweetBox` UI inside `<div id="container">`.
 
-Now, you should see `Hello World` appear on your JSBin. Congratulations, you wrote your first React UI!
+Now, you should see `Hello World` appear in your Pen. Congratulations, you wrote your first React UI!
 
 ### Write the Actual HTML for the Tweet Box
 
@@ -291,10 +288,11 @@ Now, instead of `Hello World`, we'll implement the HTML for the Tweet Box. **Swa
 
 ```
 return (
-  <div className="well clearfix">
-    <textarea className="form-control"></textarea>
-    <br/>
-    <button className="btn btn-primary pull-right">Tweet</button>
+  <div className="card card-body bg-light m-3">
+    <div className="form-group">
+      <textarea className="form-control mb-3"></textarea>
+      <button className="btn btn-primary float-right">Tweet</button>
+    </div>
   </div>
 );
 ```
@@ -302,17 +300,18 @@ return (
 There are two things you need to watch out for:
 
 - **Do not use `class`**. Instead, use `className`. It's because JSX gets translated to JS, and `class` is a keyword in the newest version of JS.
-- **If you use `<br>` instead of `<br/>`, it won't work.** Make sure to put `/` on self-closing tags.
+- **All tags must be closed.** It's not an issue with our code, but, for example, if you use `<br>` instead of `<br/>`, it won't work.** Make sure to put `/` on self-closing tags.
 
 Everything else should be the same with the jQuery example from before.
 
-If you typed this correctly, then you should see the Tweet box on your JSBin. **If nothing appears in the output, then check your code very carefully, to make sure there aren't any typos.**
+If you typed this correctly, then you should see the Tweet box in your Pen. **If nothing appears in the output, then check your code very carefully, to make sure there aren't any typos.**
 
-That's it for this step! Here's the JSBin up to this part:
+That's it for this step! Here's the Pen up to this part:
 
-<p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="https://jsbin.com/vajica/10/embed?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/vajica/10/edit">Click here</a>.</span>
+<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="js,result" data-user="BrendanBerkley" data-slug-hash="yrrRGq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Tweet Box - React JSX rendering of HTML">
+  <span>See the Pen <a href="https://codepen.io/BrendanBerkley/pen/yrrRGq/">
+  Tweet Box - React JSX rendering of HTML</a> by Brendan Berkley (<a href="https://codepen.io/BrendanBerkley">@BrendanBerkley</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
 ## Step 5: Re-implement the First Feature - Tweet Button Should Initially Be Disabled - in React (5 - 10 minutes)
