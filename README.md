@@ -322,10 +322,7 @@ We're going to re-implement in React the first feature we implemented using jQue
 
 Here's the jQuery code we wrote:
 
-<p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="https://jsbin.com/wewimu/3/edit?js,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/wewimu/3/edit">Click here</a>.</span>
-</p>
+<p data-height="265" data-theme-id="dark" data-slug-hash="aaEoNr" data-default-tab="js,result" data-user="BrendanBerkley" data-pen-title="Tweet Box - jQuery enable/disable button" class="codepen">See the Pen <a href="https://codepen.io/BrendanBerkley/pen/aaEoNr/">Tweet Box - jQuery enable/disable button</a> by Brendan Berkley (<a href="https://codepen.io/BrendanBerkley">@BrendanBerkley</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 Let's see how we can do this in React.
 
@@ -334,7 +331,7 @@ Let's see how we can do this in React.
 **First, let's disable the button by adding `disabled`.**
 
 ```
-render: function() {
+render() {
   return (
     ...
     <button className="..." disabled>Tweet</button>
@@ -367,24 +364,27 @@ $("textarea").on("input", function() {
 In the React land, we write the event handler as a **method**. **Let's call it `handleChange`**:
 
 ```
-React.createClass({
-  handleChange: function(event) {
-  },
-  render: function() {
+class TweetBox extends React.Component {
+  handleChange(event) {
+  };
+
+  render() {
     ...
   }
-});
+}
 ```
 
 Next, we invoke this handler when text is entered. To do so, **modify the `textarea` tag in `render()` like this**:
 
 ```
-<textarea className="form-control"
-          onChange={this.handleChange}></textarea>
+<textarea
+  className="form-control mb-3"
+  onChange={this.handleChange}
+></textarea>
 ```
 
 - We used `input` event for jQuery, but in React we use `onChange` - you'll learn about how events differ in React's JSX from React's documentation, so don't worry too much now.
-- **More importantly**, we use `{...}` syntax to include any JavaScript code inside the HTML syntax part of JSX. In this case, we want to pass the handler `handleChange`, and we prefix it with `this.` because it's a method on this UI object.
+- **More importantly**, we use `{...}` syntax to include any JavaScript code inside the HTML syntax part of JSX. In this case, we want to pass the handler `handleChange`, and we prefix it with `this.` because it's a method on this class.
 - If you're used to jQuery, this might seem like a bad practice, but don't worry. Again, in large applications, the code will be more manageable if those markup and behaviors are kept together for each piece of UI.
 
 To make sure that the handler is indeed being called, **let's add `console.log` inside `handleChange`**:
@@ -397,20 +397,21 @@ handleChange: function(event) {
 
 The `event` object contains `target`, which is the `textarea`. We use `.value` on it to output the current value of the `textarea`.
 
-**In your JSBin, open the `console` tab to check the output. Then type something on the Tweet box.**
+**In CodePen, press the `console` button to check the output. Then type something on the Tweet box.**
 
-![](/static/images/react-for-designers/console-tab.png)
+![](static/images/react-for-designers/console-tab.png)
 
 You can try it out here:
 
-<p class="jsbin-wrapper">
-  <a class="jsbin-embed" href="https://jsbin.com/kohudu/8/embed?javascript,console,output">JS Bin on jsbin.com</a>
-  <span class="jsbin-not-loading-msg">JSBin not loading? <a href="https://jsbin.com/kohudu/8/edit">Click here</a>.</span>
+<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="js,result" data-user="BrendanBerkley" data-slug-hash="yrdqJj" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Tweet Box - Disabled button with console log">
+  <span>See the Pen <a href="https://codepen.io/BrendanBerkley/pen/yrdqJj/">
+  Tweet Box - Disabled button with console log</a> by Brendan Berkley (<a href="https://codepen.io/BrendanBerkley">@BrendanBerkley</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
 That's it for this step! We'll finish this feature on the next step.
 
-**NOTE: Close the console tab on JSBin when you're done.** We no longer need it.
+**NOTE: You can close the CodePen console when you're done.** We no longer need it.
 
 ## Step 6: Implementing State (10 - 15 minutes)
 
